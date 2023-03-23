@@ -15,3 +15,22 @@
 
 1679518182 c:\users\home\desktop\cntu\bmtp\c++\lw\lw_8\s_calculation.h
 
+1679529902 source:c:\users\home\desktop\prashchenko-denys-kb221\lab08\project\main.cpp
+	<iostream>
+	<windows.h>
+	<cmath>
+	"ModulesParashchenko.h"
+	"s_calculation.h"
+	<iomanip>
+
+1679492947 c:\users\home\desktop\prashchenko-denys-kb221\lab08\project\modulesparashchenko.h
+	<string>
+
+1679530033 c:\users\home\desktop\prashchenko-denys-kb221\lab08\project\s_calculation.h
+	<string>
+	<iomanip>
+
+1679492784 source:c:\users\home\desktop\prashchenko-denys-kb221\lab08\project\modulesparashchenko.cpp
+	"ModulesParashchenko.h"
+	<cmath>
+
