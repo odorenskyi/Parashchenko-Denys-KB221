@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1681939553 source:c:\users\home\desktop\cntu\bmtp\c++\lw\lw_9\9.1.cpp
+	<iostream>
+	<windows.h>
+
+1681941265 source:c:\users\home\desktop\cntu\bmtp\c++\lw\lw_9\9.2.cpp
+	<iostream>
+
+1681941785 source:c:\users\home\desktop\cntu\bmtp\c++\lw\lw_9\main.cpp
+	<Windows.h>
+	<iostream>
+
+1681941262 source:c:\users\home\desktop\cntu\bmtp\c++\lw\lw_9\9.3.cpp
+	<iostream>
+
