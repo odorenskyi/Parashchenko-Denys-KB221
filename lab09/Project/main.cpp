@@ -1,5 +1,6 @@
 #include <Windows.h>
 #include <iostream>
+#include "s_calculation.h"
 using namespace std;
 
 int task_9_1() {
@@ -67,22 +68,26 @@ int main() {
     char choice;
 
     do {
-        cout << "Оберіть завдання: (u - 9.1, t - 9.2, r - 9.3): ";
+        cout << "Оберіть завдання: (u - s_calculation, t - 9.1, r - 9.2 , e - 9.3): ";
         cin >> choice;
 
     try {
         switch (choice) {
             case 'u':
-                task_9_1();
+                s_calculation();
                 break;
             case 't':
-                task_9_2();
+                task_9_1();
                 break;
             case 'r':
+                task_9_2();
+                break;
+            case 'e':
                 task_9_3();
                 break;
             case 'w':
             case 'i':
+                break;
                 return 0;
             default:
                 throw invalid_argument("Неправильний ввід.");
