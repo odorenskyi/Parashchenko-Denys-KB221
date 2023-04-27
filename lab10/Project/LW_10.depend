@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1679492784 source:c:\users\home\desktop\cntu\bmtp\c++ 2 ñ\lw\lw_10\modulesparashchenko.cpp
+	"ModulesParashchenko.h"
+	<cmath>
+
+1679492947 c:\users\home\desktop\cntu\bmtp\c++ 2 ñ\lw\lw_10\modulesparashchenko.h
+	<string>
+
+1682565784 source:c:\users\home\desktop\cntu\bmtp\c++ 2 ñ\lw\lw_10\main.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+	<ctime>
+	<vector>
+	<algorithm>
+	<Windows.h>
+	"s_calculation.h"
+	"ModulesParashchenko.h"
+	<bitset>
+
+1682565784 c:\users\home\desktop\cntu\bmtp\c++ 2 ñ\lw\lw_10\s_calculation.h
+	<cmath>
+
