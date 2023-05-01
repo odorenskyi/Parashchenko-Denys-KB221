@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1682877132 source:c:\users\home\desktop\cntu\bmtp\c++ 2 ñ\lw\lw_11\main.cpp
+	<iostream>
+	<fstream>
+	<map>
+	<windows.h>
+
