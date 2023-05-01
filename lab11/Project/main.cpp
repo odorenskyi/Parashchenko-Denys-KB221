@@ -2,6 +2,7 @@
 #include <fstream>
 #include <map>
 #include <windows.h>
+#include "struct_type_project_2.h"
 
 using namespace std;
 
@@ -15,7 +16,7 @@ void saveDictionary(const map<string, string>& dict, const string & fileName) {
         }
         file.close();
     } else {
-        cout << "Не вдалося зберегти словник у файл" << endl;
+        cout << "РќРµ РІРґР°Р»РѕСЃСЏ Р·Р±РµСЂРµРіС‚Рё СЃР»РѕРІРЅРёРє Сѓ С„Р°Р№Р»" << endl;
     }
 }
 
@@ -33,29 +34,29 @@ void loadDictionary(map<string, string>& dict, const string& fileName) {
         }
         file.close();
     } else {
-        cout << "Не вдалося завантажити словник із файлу" << endl;
+        cout << "РќРµ РІРґР°Р»РѕСЃСЏ Р·Р°РІР°РЅС‚Р°Р¶РёС‚Рё СЃР»РѕРІРЅРёРє С–Р· С„Р°Р№Р»Сѓ" << endl;
     }
 }
 
 void addRecord(map<string, string>& dict) {
     string city, code;
-    cout << "Введіть назву міста: ";
+    cout << "Р’РІРµРґС–С‚СЊ РЅР°Р·РІСѓ РјС–СЃС‚Р°: ";
     getline(cin, city);
-    cout << "Введіть код: ";
+    cout << "Р’РІРµРґС–С‚СЊ РєРѕРґ: ";
     getline(cin, code);
     dict[city] = code;
 }
 
 void deleteRecord(map<string, string>& dict) {
     string city;
-    cout << "Введіть назву міста для видалення: ";
+    cout << "Р’РІРµРґС–С‚СЊ РЅР°Р·РІСѓ РјС–СЃС‚Р° РґР»СЏ РІРёРґР°Р»РµРЅРЅСЏ: ";
     getline(cin, city);
     auto it = dict.find(city);
     if (it != dict.end()) {
         dict.erase(it);
-        cout << "Запис видалено" << endl;
+        cout << "Р—Р°РїРёСЃ РІРёРґР°Р»РµРЅРѕ" << endl;
     } else {
-        cout << "Запис не знайдено" << endl;
+        cout << "Р—Р°РїРёСЃ РЅРµ Р·РЅР°Р№РґРµРЅРѕ" << endl;
     }
 }
 
@@ -73,16 +74,16 @@ int main() {
     SetConsoleCP(1251);
     map<string, string> dict;
     loadDictionary(dict, "dictionary.txt");
-    cout << "Ласкаво просимо до словника телефонних кодів" << endl;
+    cout << "Р›Р°СЃРєР°РІРѕ РїСЂРѕСЃРёРјРѕ РґРѕ СЃР»РѕРІРЅРёРєР° С‚РµР»РµС„РѕРЅРЅРёС… РєРѕРґС–РІ" << endl;
     while (true) {
-        cout << "Виберіть варіант:" << endl;
-        cout << "1. Додати запис" << endl;
-        cout << "2. Видалити запис" << endl;
-        cout << "3. Вивести словник" << endl;
-        cout << "4. Зберегти та вийти" << endl;
+        cout << "Р’РёР±РµСЂС–С‚СЊ РІР°СЂС–Р°РЅС‚:" << endl;
+        cout << "1. Р”РѕРґР°С‚Рё Р·Р°РїРёСЃ" << endl;
+        cout << "2. Р’РёРґР°Р»РёС‚Рё Р·Р°РїРёСЃ" << endl;
+        cout << "3. Р’РёРІРµСЃС‚Рё СЃР»РѕРІРЅРёРє" << endl;
+        cout << "4. Р—Р±РµСЂРµРіС‚Рё С‚Р° РІРёР№С‚Рё" << endl;
         int choice;
         cin >> choice;
-        cin.ignore(); // ігнорувати символ нового рядка
+        cin.ignore(); // С–РіРЅРѕСЂСѓРІР°С‚Рё СЃРёРјРІРѕР» РЅРѕРІРѕРіРѕ СЂСЏРґРєР°
         switch (choice) {
             case 1:
                 addRecord(dict);
@@ -95,10 +96,10 @@ int main() {
                 break;
             case 4:
                 saveDictionary(dict, "dictionary.txt");
-                cout << "Словник збережено. Вихід..." << endl;
+                cout << "РЎР»РѕРІРЅРёРє Р·Р±РµСЂРµР¶РµРЅРѕ. Р’РёС…С–Рґ..." << endl;
                 return 0;
             default:
-                cout << "Невірний вибір" << endl;
+                cout << "РќРµРІС–СЂРЅРёР№ РІРёР±С–СЂ" << endl;
         }
     }
 }
