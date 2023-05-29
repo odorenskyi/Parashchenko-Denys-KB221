@@ -4,33 +4,33 @@
 
 class ClassLab12_Parashencko {
 private:
-  double radius;  // Радіус кола
+  double radius;  // Р Р°РґС–СѓСЃ РєРѕР»Р°
 
 public:
-  // Конструктор класу
+  // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСѓ
   ClassLab12_Parashencko(double r) {
-    // Валідація вхідних даних
+    // Р’Р°Р»С–РґР°С†С–СЏ РІС…С–РґРЅРёС… РґР°РЅРёС…
     if (r < 0) {
-      throw std::invalid_argument("Радіус має бути додатнім числом");
+      throw std::invalid_argument("Р Р°РґС–СѓСЃ РјР°С” Р±СѓС‚Рё РґРѕРґР°С‚РЅС–Рј С‡РёСЃР»РѕРј");
     }
     radius = r;
   }
 
-  // Функція для зміни значення радіуса
+  // Р¤СѓРЅРєС†С–СЏ РґР»СЏ Р·РјС–РЅРё Р·РЅР°С‡РµРЅРЅСЏ СЂР°РґС–СѓСЃР°
   void setRadius(double r) {
-    // Валідація вхідних даних
+    // Р’Р°Р»С–РґР°С†С–СЏ РІС…С–РґРЅРёС… РґР°РЅРёС…
     if (r < 0) {
-      throw std::invalid_argument("Радіус має бути додатнім числом");
+      throw std::invalid_argument("Р Р°РґС–СѓСЃ РјР°С” Р±СѓС‚Рё РґРѕРґР°С‚РЅС–Рј С‡РёСЃР»РѕРј");
     }
     radius = r;
   }
 
-  // Функція для отримання значення радіуса
+  // Р¤СѓРЅРєС†С–СЏ РґР»СЏ РѕС‚СЂРёРјР°РЅРЅСЏ Р·РЅР°С‡РµРЅРЅСЏ СЂР°РґС–СѓСЃР°
   double getRadius() const {
     return radius;
   }
 
-  // Функція для обчислення площі кола
+  // Р¤СѓРЅРєС†С–СЏ РґР»СЏ РѕР±С‡РёСЃР»РµРЅРЅСЏ РїР»РѕС‰С– РєРѕР»Р°
   double getArea() const {
     return 3.14159 * radius * radius;
   }
@@ -44,26 +44,26 @@ SetConsoleCP(1251);
 //SetConsoleOutputCP(CP_UTF8);
   double radius;
 
-  std::cout << "Введіть радіус кола: ";
+  std::cout << "Р’РІРµРґС–С‚СЊ СЂР°РґС–СѓСЃ РєРѕР»Р°: ";
   std::cin >> radius;
 
   try {
-    // Створення об'єкта класу ClassLab12_Parashencko
+    // РЎС‚РІРѕСЂРµРЅРЅСЏ РѕР±'С”РєС‚Р° РєР»Р°СЃСѓ ClassLab12_Parashencko
     ClassLab12_Parashencko circle(radius);
 
-    // Отримання значення радіуса та площі кола
-    std::cout << "Радіус кола: " << circle.getRadius() << std::endl;
-    std::cout << "Площа кола: " << circle.getArea() << std::endl;
+    // РћС‚СЂРёРјР°РЅРЅСЏ Р·РЅР°С‡РµРЅРЅСЏ СЂР°РґС–СѓСЃР° С‚Р° РїР»РѕС‰С– РєРѕР»Р°
+    std::cout << "Р Р°РґС–СѓСЃ РєРѕР»Р°: " << circle.getRadius() << std::endl;
+    std::cout << "РџР»РѕС‰Р° РєРѕР»Р°: " << circle.getArea() << std::endl;
 
-    // Зміна значення радіуса та повторне обчислення площі кола
+    // Р—РјС–РЅР° Р·РЅР°С‡РµРЅРЅСЏ СЂР°РґС–СѓСЃР° С‚Р° РїРѕРІС‚РѕСЂРЅРµ РѕР±С‡РёСЃР»РµРЅРЅСЏ РїР»РѕС‰С– РєРѕР»Р°
     double newRadius;
-    std::cout << "Введіть нове значення радіуса: ";
+    std::cout << "Р’РІРµРґС–С‚СЊ РЅРѕРІРµ Р·РЅР°С‡РµРЅРЅСЏ СЂР°РґС–СѓСЃР°: ";
     std::cin >> newRadius;
     circle.setRadius(newRadius);
-    std::cout << "Новий радіус кола: " << circle.getRadius() << std::endl;
-    std::cout << "Нова площа кола: " << circle.getArea() << std::endl;
+    std::cout << "РќРѕРІРёР№ СЂР°РґС–СѓСЃ РєРѕР»Р°: " << circle.getRadius() << std::endl;
+    std::cout << "РќРѕРІР° РїР»РѕС‰Р° РєРѕР»Р°: " << circle.getArea() << std::endl;
   } catch (const std::invalid_argument& e) {
-    std::cout << "Помилка: " << e.what() << std::endl;
+    std::cout << "РџРѕРјРёР»РєР°: " << e.what() << std::endl;
   }
 
   return 0;
