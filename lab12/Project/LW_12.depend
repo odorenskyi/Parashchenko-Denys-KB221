@@ -1,4 +1,6 @@
 # depslib dependency file v1.0
-1684091442 source:c:\users\home\desktop\cntu\bmtp\c++ 2 ñ\lw\lw_12\main.cpp
+1685321845 source:c:\users\home\desktop\cntu\bmtp\c++ 2 ñ\lw\lw_12\main.cpp
 	<iostream>
+	<stdexcept>
+	<Windows.h>
 
